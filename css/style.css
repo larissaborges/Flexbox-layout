@@ -1,0 +1,141 @@
+* {margin: 0; padding: 0;}
+.banner {background: url("../css/mesa-apple.jpeg");
+    width: 100%;
+    background-size: cover;
+}
+
+.top-bg {
+    background-color: #000;
+    display: flex;
+    width: 100%;
+ 
+}
+.logo{
+    color: #fff;
+    flex: 1;
+    font-size: 40px;
+    padding: 18px;
+    text-transform: uppercase;
+    
+}
+.menu{
+    flex: 3px;
+
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    flex-flow: row wrap;
+}
+.menu ul li{
+    flex: 1;
+    text-align: center;
+}
+.menu ul li a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.menu ul li a:hover{
+    color: dimgray;
+}
+
+/*banner*/
+
+.banner-text{
+    display: flex;
+    padding: 15% 0;
+}
+.banner-text-items{
+    color: #fff;
+    margin-left: 20px;
+    text-align: left;
+    width: 50%;
+}
+.banner-text-items h2{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.banner-text-items p{
+    font-size: 18px;
+}
+/*main content*/
+.main-content{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5% 0;
+}
+.main1{
+    flex: 1;
+    padding: 3%;
+    text-align: center;
+    color: #232322;
+}
+/*contact*/
+.contact-text-items{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contact{
+    background: #eeefea;
+}
+.contact-text-items h2{
+ color: #232322;
+ font-size: 40px;
+ margin-bottom: 30px;
+ margin-top: 30px;
+}
+.contact-text-items input{
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 50%;
+}
+.contact-text-items textarea{
+    border-radius: 10px;
+    height: 150px;
+    padding: 10px;
+    width: 50%; 
+}
+.contact-text-items a{
+    background: #232322;
+    color: #eeefea;
+    display: block;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 20px 80px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media all and (max-width:500px){
+    .top-bg{
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo{
+        padding: 18px 0 0;
+    }
+    .menu ul{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .menu ul li{
+        padding: 5px;
+    }
+    .banner-text-items{
+        width: 100%;
+    }
+    .banner-text-items h2{
+        font-size: 1.5em;
+    }
+    .main-content{
+        flex-direction: column;
+    }
+}
+
